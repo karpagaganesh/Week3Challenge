@@ -25,7 +25,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginUser(_ sender: Any) {
-        PFUser.logInWithUsername(inBackground: emailTextField.text!, password:passwordTextField.text!) {
+//        PFUser.logInWithUsername(inBackground: emailTextField.text!, password:passwordTextField.text!) {
+        PFUser.logInWithUsername(inBackground: "myUsernameBreakroom4", password:"myPasswordBreakroom4") {
             (user, error) -> Void in
             if user != nil {
                 // Do stuff after successful login.
