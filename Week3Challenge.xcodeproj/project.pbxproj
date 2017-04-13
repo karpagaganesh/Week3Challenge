@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		3546A21E0794FF2EC5EDF94A /* Pods_Week3Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416862E157A2B87743D9952F /* Pods_Week3Challenge.framework */; };
 		619E6E9A1E9F15C00052621B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619E6E991E9F15C00052621B /* AppDelegate.swift */; };
-		619E6E9C1E9F15C00052621B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619E6E9B1E9F15C00052621B /* ViewController.swift */; };
+		619E6E9C1E9F15C00052621B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619E6E9B1E9F15C00052621B /* LoginViewController.swift */; };
 		619E6E9F1E9F15C00052621B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619E6E9D1E9F15C00052621B /* Main.storyboard */; };
 		619E6EA11E9F15C00052621B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619E6EA01E9F15C00052621B /* Assets.xcassets */; };
 		619E6EA41E9F15C00052621B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619E6EA21E9F15C00052621B /* LaunchScreen.storyboard */; };
+		61BB7BD91E9F1C1000B5188B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BB7BD81E9F1C1000B5188B /* ChatViewController.swift */; };
+		61BB7BDB1E9F216600B5188B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BB7BDA1E9F216600B5188B /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		416862E157A2B87743D9952F /* Pods_Week3Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week3Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		619E6E961E9F15C00052621B /* Week3Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		619E6E991E9F15C00052621B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		619E6E9B1E9F15C00052621B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		619E6E9B1E9F15C00052621B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		619E6E9E1E9F15C00052621B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619E6EA01E9F15C00052621B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619E6EA31E9F15C00052621B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619E6EA51E9F15C00052621B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61BB7BD81E9F1C1000B5188B /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		61BB7BDA1E9F216600B5188B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C7513E6E20832C1FAECBB2B2 /* Pods-Week3Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week3Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Week3Challenge/Pods-Week3Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F56EC33B4DFD16981CF7B1B7 /* Pods-Week3Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week3Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Week3Challenge/Pods-Week3Challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,11 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				619E6E991E9F15C00052621B /* AppDelegate.swift */,
-				619E6E9B1E9F15C00052621B /* ViewController.swift */,
+				619E6E9B1E9F15C00052621B /* LoginViewController.swift */,
 				619E6E9D1E9F15C00052621B /* Main.storyboard */,
 				619E6EA01E9F15C00052621B /* Assets.xcassets */,
 				619E6EA21E9F15C00052621B /* LaunchScreen.storyboard */,
 				619E6EA51E9F15C00052621B /* Info.plist */,
+				61BB7BD81E9F1C1000B5188B /* ChatViewController.swift */,
+				61BB7BDA1E9F216600B5188B /* Message.swift */,
 			);
 			path = Week3Challenge;
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619E6E9C1E9F15C00052621B /* ViewController.swift in Sources */,
+				619E6E9C1E9F15C00052621B /* LoginViewController.swift in Sources */,
+				61BB7BDB1E9F216600B5188B /* Message.swift in Sources */,
+				61BB7BD91E9F1C1000B5188B /* ChatViewController.swift in Sources */,
 				619E6E9A1E9F15C00052621B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +387,7 @@
 				619E6EAA1E9F15C00052621B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
